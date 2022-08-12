@@ -3,9 +3,9 @@
 <h1>Wishlist</h1>
 <hr />
 <a asp-action="create">Add Item</a>
-<hr />
+
 <ul>@foreach( var item in Model)
             {
-                <li>@item.Description <a asp-action="delete" asp-route-id="@item.Id">Delete</a></li>
+                <li>@item.Description <a asp-action="delete" asp-route-id="@item.Id">delete</a></li>
             }
 </ul>
